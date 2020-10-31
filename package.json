@@ -1,0 +1,20 @@
+{
+  "name": "covid-tracker-tweeter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sebastian Alsina <alsinas@me.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --ignore db.json .",
+    "start": "node .",
+    "deploy": "rsync -azP . raspberry.alsina.xyz:~/Projects/covid-tracker-tweeter"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "lowdb": "^1.0.0",
+    "numeral": "^2.0.6",
+    "random": "^2.2.0",
+    "twitter": "^1.7.1"
+  }
+}
